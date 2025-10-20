@@ -63,3 +63,8 @@ ol {
     border-radius: 50px;
 }
 
+/* service */
+.service {
+    padding: 80px 0;
+    text-align: center;
+}
