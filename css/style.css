@@ -34,7 +34,7 @@ body {
     font-family: "Mulish", sans-serif;
 }
 
-/* HEADER */
+/*---------------------- HEADER ----------------------*/
 
 .header {
     padding-top: 80px;
@@ -63,7 +63,7 @@ body {
     color: #458FF6;
 }
 
-/* HERO */
+/*---------------------- HERO ----------------------*/
 .hero__title {
     font-weight: 700;
     font-size: 48px;
@@ -102,7 +102,7 @@ body {
     justify-content: space-between;
 }
 
-/* SERVICE */
+/*---------------------- SERVICE ----------------------*/
 .service {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -172,4 +172,102 @@ body {
     justify-content: space-between;
     column-gap: 29px;
     row-gap: 37px;
+    margin-bottom: 66px;
+}
+
+.service__link {
+    width: 230px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 111%;
+    color: #458ff6;
+    border-radius: 55px;
+
+    border: 1px solid #458ff6;
+    padding: 17px 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* ---------------------- PROVIDER ---------------------- */
+.provider__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.provider__text {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 152%;
+    color: #7d7987;
+    margin-bottom: 39px;
+}
+
+.provider__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 111%;
+    color: #458ff6;
+    border-radius: 55px;
+
+    border: 1px solid #458ff6;
+    padding: 17px 50px;
+    display: inline-block;
+}
+
+.provider__content {
+    width: 446px;
+}
+
+.provider__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 251px;
+}
+
+/* ----------------------DOWNLOAD---------------------- */
+
+.download__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.download__text {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 152%;
+    color: #7d7987;
+    margin-bottom: 39px;
+}
+
+.download__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 111%;
+    color: #458ff6;
+    border-radius: 55px;
+
+    border: 1px solid #458ff6;
+    padding: 17px 50px;
+    display: inline-block;
+}
+
+.download__content {
+    width: 446px;
+}
+
+.download__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 251px;
 }
