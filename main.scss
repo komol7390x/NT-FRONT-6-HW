@@ -16,6 +16,7 @@ ul {
 }
 
 a {
+    color: #373737;
     text-decoration: none;
 }
 
@@ -26,6 +27,7 @@ a {
 }
 
 body {
+    color: black;
     --font-family: "Roboto", sans-serif;
 }
 
@@ -36,7 +38,12 @@ body {
 // ------------------- HEADER -------------------
 .header {
     padding-top: 43px;
-    padding-bottom: 164px;
+    padding-bottom: 147px;
+}
+
+.header__text {
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .header__block {
@@ -48,4 +55,202 @@ body {
 .header__list {
     display: flex;
     gap: 73px;
+}
+
+.header__line {
+    background: #717CFF;
+    border-radius: 2px;
+    width: 23px;
+    height: 3px;
+}
+
+// ------------------- HERO -------------------
+.hero__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__content {
+    margin-top: 70px;
+    align-items: baseline;
+}
+
+.hero__first_title {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__build {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 56px;
+    color: #717CFF;
+}
+
+.hero__title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 56px;
+    color: #2f2f2f;
+}
+
+.hero__title2 {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 56px;
+    color: #2f2f2f;
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    width: 632px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 173%;
+    color: #7d7d7d;
+    margin-bottom: 42px;
+}
+
+.hero__link {
+    width: 262px;
+    background-color: #717CFF;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.hero__sub_link {
+    display: flex;
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 182%;
+    background-color: #717CFF;
+    padding: 15px 0;
+    gap: 15px;
+}
+
+.hero__web {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+// ------------------- UNIVERSITY -------------------
+.university__block {
+    background-color: #fafafa;
+    padding-bottom: 58px;
+    padding-top: 58px;
+    margin-bottom: 80px;
+}
+
+.university__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 23px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #6c6c6c;
+    margin-bottom: 86px;
+}
+
+.university__logo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.scorll_img {
+    display: flex;
+    max-width: 107px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// ------------------- SERVICE -------------------
+.services__block {
+    background-color: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+.service__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 146%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #373737;
+}
+
+.service__text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 173%;
+    text-align: center;
+    color: #7d7d7d;
+    margin-bottom: 104px;
+}
+
+.service__list {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 344px);
+    gap: 40px 40px;
+    margin-bottom: 66px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__item {
+    width: 100%;
+    max-width: 344px;
+    padding: 25px;
+    padding: 62px 52px 47px 36px;
+    box-shadow: 10px 10px 50px 0 rgba(14, 57, 199, 0.4);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.service__sub_title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 154%;
+    color: #37474f;
+}
+
+.service__sub_text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.03em;
+    color: rgba(55, 71, 79, 0.72);
+    margin-bottom: 20px;
+}
+
+.service__sub_img {
+    margin-bottom: 25px;
+}
+
+.service__sub_link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.service__sub_link_a {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    color: #717CFF;
 }
