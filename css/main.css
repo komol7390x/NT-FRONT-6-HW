@@ -34,8 +34,8 @@ body {
 }
 
 .header {
-  padding-top: 80px;
-  padding-top: 80px;
+  padding-top: 43px;
+  padding-bottom: 164px;
 }
 
 .header__block {
@@ -54,5 +54,5 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 49px;
+  gap: 73px;
 }/*# sourceMappingURL=main.css.map */
