@@ -34,6 +34,11 @@ body {
     font-family: "Mulish", sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*---------------------- HEADER ----------------------*/
 
 .header {
@@ -306,11 +311,6 @@ body {
     border-radius: 20px;
 }
 
-
-.article__img {
-    margin-bottom: 19px;
-}
-
 .article__sub_title {
     font-weight: 700;
     font-size: 24px;
@@ -329,7 +329,7 @@ body {
     color: #4089ed;
 }
 
-.service__list {
+.article__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -338,7 +338,7 @@ body {
     margin-bottom: 66px;
 }
 
-.service__link {
+.article__link {
     width: 230px;
     font-weight: 700;
     font-size: 21px;
@@ -352,4 +352,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+}
+
+.article_sub_link {
+    display: flex;
+    gap: 5px;
+    align-content: center;
 }
