@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    font-family: "Livvic", sans-serif;
+    background-color: #014e56;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+}
+
+.b {
+    border: 1px solid red;
+}
+
+// ------------- HEADER -------------
+
+.header {
+    padding-top: 48px;
+    padding-bottom: 80px;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/menu.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+}
+
+.header__navi {
+    min-width: 316px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 43px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.contact_us {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 9px 33px 11px 32px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    color: #fff;
+    display: none;
+}
+
+.logo__btn {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .header__logo img {
+        width: 120px;
+        height: auto;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .header__navi {
+        width: 380px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .logo__btn {
+        display: inline-block;
+    }
+
+    .contact_us {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .header__navi {
+        width: 380px;
+    }
+
+    .header__logo {
+        width: 160px;
+    }
+}
+
+// ------------- HERO -------------
+.hero__block {
+    min-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__title {
+    width: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.hero__talant {
+    color: #f67e7e;
+}
+
+.hero__text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 187%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.hero__img {
+    width: 358px;
+    height: 200px;
+}
