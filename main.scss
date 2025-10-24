@@ -36,14 +36,17 @@ body {
     line-height: 156%;
     color: #fff;
 }
+
 .b {
     border: 1px solid red;
 }
 
+// ---------------- HEADER ----------------
 .header {
     padding-top: 48px;
     padding-bottom: 80px;
 }
+
 .header__menu {
     width: 20px;
     height: 20px;
@@ -63,6 +66,7 @@ body {
     display: inline-block;
     width: 128px;
 }
+
 .header__btn {
     font-weight: 600;
     font-size: 18px;
@@ -80,6 +84,7 @@ body {
     line-height: 156%;
     color: #fff;
 }
+
 .header__nav {
     display: flex;
     gap: 48px;
@@ -94,9 +99,11 @@ body {
     .header__menu {
         display: none;
     }
+
     .header__btn {
         display: inline-block;
     }
+
     .header__list {
         display: flex;
     }
@@ -106,11 +113,13 @@ body {
     .header__nav {
         gap: 80px;
     }
+
     .header__logo {
         width: 160px;
     }
 }
 
+// ---------------- HERO ----------------
 .hero {
     padding-bottom: 100px;
 }
@@ -142,6 +151,7 @@ body {
         width: 391px;
         margin-bottom: 24px;
     }
+
     .hero__text {
         width: 457px;
         margin-left: auto;
@@ -185,6 +195,7 @@ body {
     }
 }
 
+// ---------------- MANAGE ----------------
 .manage {
     background-color: #012f34;
     padding-top: 64px;
@@ -205,6 +216,11 @@ body {
 
 .manage__img {
     margin-bottom: 16px;
+}
+
+.manage_context {
+    display: flex;
+    justify-content: space-between;
 }
 
 .manage__sub_title {
@@ -233,6 +249,7 @@ body {
         line-height: 100%;
         width: 445px;
     }
+
     .manage__block {
         padding: 0 77px;
     }
@@ -244,19 +261,23 @@ body {
         padding: 0;
         justify-content: space-between;
     }
+
     .manage__list {
         max-width: 553px;
     }
+
     .manage {
         background-position: right bottom;
         padding: 140px 0;
     }
+
     .manage__title {
         font-size: 48px;
         line-height: 100%;
     }
 }
 
+// ---------------- STORY ----------------
 .story {
     background-color: #004047;
     padding: 64px 0;
@@ -318,6 +339,7 @@ body {
         margin-bottom: 64px;
         font-size: 32px;
         width: 445px;
+
         span {
             color: #f67e7e;
         }
@@ -361,6 +383,7 @@ body {
         width: 445px;
         text-align: center;
         margin-bottom: 80px;
+
         span {
             color: #f67e7e;
         }

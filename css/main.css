@@ -217,6 +217,15 @@ body {
   margin-bottom: 16px;
 }
 
+.manage_context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .manage__sub_title {
   font-weight: 700;
   font-size: 18px;
