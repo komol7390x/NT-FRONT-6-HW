@@ -4,12 +4,15 @@
 :root {
     --primary: #299764;
     --main-background: #1c1c1c;
+    --gradient: linear-gradient(90deg, #ea4335 19.83%, #fbbc05 65%, #34a853 82.29%, #4285f4 100%);
+    --instagram: radial-gradient(230.93% 230.93% at 102.01% 2.03%, rgb(249, 237, 50) 0%, rgb(238, 42, 123) 36.000001430511475%, rgb(210, 42, 138) 43.99999976158142%, rgb(139, 42, 178) 60.00000238418579%, rgb(27, 42, 240) 82.99999833106995%, rgb(0, 42, 255) 87.99999952316284%);
 }
 
 @theme inline {
     --color-primary: var(--primary);
     --color-main-background: var(--main-background);
-    --color-main-border: #333333
+    --color-main-border: #333333;
+    --background-gradient: var(--gradient);
 }
 
 body {
