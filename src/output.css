@@ -182,6 +182,9 @@
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
   .bottom-\[-33px\] {
     bottom: -33px;
   }
@@ -206,6 +209,12 @@
       max-width: 96rem;
     }
   }
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
+  }
+  .m-\[24px\] {
+    margin: 24px;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -224,6 +233,9 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
@@ -235,6 +247,21 @@
   }
   .mb-\[60px\] {
     margin-bottom: 60px;
+  }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
+  .ml-\[50px\] {
+    margin-left: 50px;
+  }
+  .ml-\[66px\] {
+    margin-left: 66px;
+  }
+  .ml-\[px\] {
+    margin-left: px;
   }
   .block {
     display: block;
@@ -248,11 +275,17 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .h-\[4px\] {
     height: 4px;
   }
   .h-\[58px\] {
     height: 58px;
+  }
+  .h-\[333px\] {
+    height: 333px;
   }
   .h-\[500px\] {
     height: 500px;
@@ -260,11 +293,17 @@
   .w-\[58px\] {
     width: 58px;
   }
+  .w-\[372px\] {
+    width: 372px;
+  }
   .w-\[387px\] {
     width: 387px;
   }
   .w-\[416px\] {
     width: 416px;
+  }
+  .w-\[420px\] {
+    width: 420px;
   }
   .w-\[470px\] {
     width: 470px;
@@ -281,6 +320,9 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .translate-x-\[-50\%\] {
     --tw-translate-x: -50%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -295,11 +337,17 @@
   .cursor-pointer {
     cursor: pointer;
   }
+  .resize {
+    resize: both;
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .content-between {
+    align-content: space-between;
   }
   .items-center {
     align-items: center;
@@ -309,6 +357,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -334,8 +385,17 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-\[1\] {
+    border-radius: 1;
+  }
+  .rounded-\[16px\] {
+    border-radius: 16px;
   }
   .rounded-\[20px\] {
     border-radius: 20px;
@@ -346,6 +406,14 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-5 {
+    border-style: var(--tw-border-style);
+    border-width: 5px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
@@ -374,6 +442,12 @@
   }
   .bg-\[url\(\'\.\/img\/hero_car\.jpg\'\)\] {
     background-image: url('./img/hero_car.jpg');
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-24 {
+    padding: calc(var(--spacing) * 24);
   }
   .p-\[17px\] {
     padding: 17px;
@@ -414,6 +488,9 @@
   .pt-\[30px\] {
     padding-top: 30px;
   }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
   .pt-\[60px\] {
     padding-top: 60px;
   }
@@ -423,8 +500,17 @@
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-\[20\] {
+    padding-bottom: 20;
+  }
   .pb-\[30px\] {
     padding-bottom: 30px;
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
   }
   .pl-\[22px\] {
     padding-left: 22px;
@@ -468,6 +554,13 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .placeholder\:text-\[\#555\] {
     &::placeholder {
@@ -537,6 +630,11 @@ body {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -550,6 +648,7 @@ body {
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
