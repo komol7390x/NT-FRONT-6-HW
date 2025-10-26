@@ -206,26 +206,11 @@
       max-width: 96rem;
     }
   }
-  .m-\[70px\] {
-    margin: 70px;
-  }
-  .mx-\[100px\] {
-    margin-inline: 100px;
-  }
-  .mx-\[120px\] {
-    margin-inline: 120px;
-  }
   .mx-auto {
     margin-inline: auto;
   }
   .my-40 {
     margin-block: calc(var(--spacing) * 40);
-  }
-  .my-\[100px\] {
-    margin-block: 100px;
-  }
-  .my-\[120px\] {
-    margin-block: 120px;
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -236,14 +221,8 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
-  }
   .mt-\[100px\] {
     margin-top: 100px;
-  }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
@@ -253,9 +232,6 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
-  }
-  .mb-40 {
-    margin-bottom: calc(var(--spacing) * 40);
   }
   .mb-\[60px\] {
     margin-bottom: 60px;
@@ -269,14 +245,8 @@
   .grid {
     display: grid;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .inline-flex {
     display: inline-flex;
-  }
-  .table {
-    display: table;
   }
   .h-\[4px\] {
     height: 4px;
@@ -284,26 +254,11 @@
   .h-\[58px\] {
     height: 58px;
   }
-  .h-\[479px\] {
-    height: 479px;
-  }
   .h-\[500px\] {
     height: 500px;
   }
-  .h-\[679\] {
-    height: 679;
-  }
-  .h-\[679px\] {
-    height: 679px;
-  }
   .w-\[58px\] {
     width: 58px;
-  }
-  .w-\[320px\] {
-    width: 320px;
-  }
-  .w-\[330px\] {
-    width: 330px;
   }
   .w-\[387px\] {
     width: 387px;
@@ -323,14 +278,8 @@
   .w-\[730px\] {
     width: 730px;
   }
-  .w-\[px\] {
-    width: px;
-  }
   .w-full {
     width: 100%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .translate-x-\[-50\%\] {
     --tw-translate-x: -50%;
@@ -345,9 +294,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -388,17 +334,11 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
   .rounded-\[20px\] {
     border-radius: 20px;
-  }
-  .rounded-\[40px\] {
-    border-radius: 40px;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -407,59 +347,18 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
-  .border-\[20\] {
-    border-style: var(--tw-border-style);
-    border-width: 20;
-  }
-  .border-\[20px\] {
-    border-style: var(--tw-border-style);
-    border-width: 20px;
-  }
-  .border-r {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 1px;
-  }
-  .border-r-\[20px\] {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 20px;
-  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-\[var\(border\)\] {
-    border-color: var(border);
-  }
-  .border-\[var\(instagram\)\] {
-    border-color: var(instagram);
-  }
-  .border-\[var\(instgram\)\] {
-    border-color: var(instgram);
-  }
-  .border-\[var-\] {
-    border-color: var-;
-  }
-  .border-\[var\] {
-    border-color: var;
-  }
   .border-main-border {
     border-color: #333333;
-  }
-  .border-white {
-    border-color: var(--color-white);
   }
   .border-b-main-border {
     border-bottom-color: #333333;
   }
   .bg-\[\#272727\] {
     background-color: #272727;
-  }
-  .bg-\[var\(--gradient\)\] {
-    background-color: var(--gradient);
   }
   .bg-main-background {
     background-color: var(--main-background);
@@ -491,29 +390,14 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
-  .px-\[18px\] {
-    padding-inline: 18px;
-  }
   .px-\[30px\] {
     padding-inline: 30px;
   }
   .px-\[50px\] {
     padding-inline: 50px;
   }
-  .px-\[120px\] {
-    padding-inline: 120px;
-  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
-  }
-  .py-30 {
-    padding-block: calc(var(--spacing) * 30);
-  }
-  .py-40 {
-    padding-block: calc(var(--spacing) * 40);
-  }
-  .py-\[18\] {
-    padding-block: 18;
   }
   .py-\[18px\] {
     padding-block: 18px;
@@ -521,14 +405,8 @@
   .py-\[22px\] {
     padding-block: 22px;
   }
-  .py-\[100\] {
-    padding-block: 100;
-  }
   .py-\[100px\] {
     padding-block: 100px;
-  }
-  .py-\[120px\] {
-    padding-block: 120px;
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -585,30 +463,11 @@
   .text-\[\#4285f4\] {
     color: #4285f4;
   }
-  .text-\[var\(\)\] {
-    color: var();
-  }
-  .text-\[var\(--insta\)\] {
-    color: var(--insta);
-  }
-  .text-\[var\(--instagram\)\] {
-    color: var(--instagram);
-  }
-  .text-\[var\] {
-    color: var;
-  }
   .text-black {
     color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .placeholder\:text-\[\#555\] {
     &::placeholder {
@@ -678,11 +537,6 @@ body {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -696,7 +550,6 @@ body {
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
