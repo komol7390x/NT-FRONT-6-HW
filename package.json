@@ -1,0 +1,28 @@
+{
+  "name": "nt-front-6-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komol7390x/NT-FRONT-6-HW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/komol7390x/NT-FRONT-6-HW/issues"
+  },
+  "homepage": "https://github.com/komol7390x/NT-FRONT-6-HW#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.16"
+  }
+}
