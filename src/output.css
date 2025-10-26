@@ -239,7 +239,6 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
-<<<<<<< Updated upstream
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -267,14 +266,6 @@
   .h-\[4px\] {
     height: 4px;
   }
-=======
-  .flex {
-    display: flex;
-  }
-  .inline-flex {
-    display: inline-flex;
-  }
->>>>>>> Stashed changes
   .h-\[58px\] {
     height: 58px;
   }
@@ -296,15 +287,12 @@
   .w-\[416px\] {
     width: 416px;
   }
-<<<<<<< Updated upstream
   .w-\[420px\] {
     width: 420px;
   }
   .w-\[470px\] {
     width: 470px;
   }
-=======
->>>>>>> Stashed changes
   .w-\[575px\] {
     width: 575px;
   }
@@ -331,15 +319,12 @@
   .cursor-pointer {
     cursor: pointer;
   }
-<<<<<<< Updated upstream
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-=======
->>>>>>> Stashed changes
   .items-center {
     align-items: center;
   }
@@ -364,7 +349,6 @@
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
-<<<<<<< Updated upstream
   .gap-x-\[54px\] {
     column-gap: 54px;
   }
@@ -374,8 +358,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-=======
->>>>>>> Stashed changes
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -409,6 +391,9 @@
   .bg-main-background {
     background-color: var(--main-background);
   }
+  .bg-main-border {
+    background-color: #333333;
+  }
   .bg-primary {
     background-color: var(--primary);
   }
@@ -418,12 +403,9 @@
   .bg-\[url\(\'\.\/img\/hero_car\.jpg\'\)\] {
     background-image: url('./img/hero_car.jpg');
   }
-<<<<<<< Updated upstream
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-=======
->>>>>>> Stashed changes
   .p-\[17px\] {
     padding: 17px;
   }
@@ -442,12 +424,9 @@
   .px-\[30px\] {
     padding-inline: 30px;
   }
-<<<<<<< Updated upstream
   .px-\[50px\] {
     padding-inline: 50px;
   }
-=======
->>>>>>> Stashed changes
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -474,6 +453,9 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .pb-\[30px\] {
     padding-bottom: 30px;
@@ -524,12 +506,9 @@
   .text-black {
     color: var(--color-black);
   }
-<<<<<<< Updated upstream
   .text-white {
     color: var(--color-white);
   }
-=======
->>>>>>> Stashed changes
   .placeholder\:text-\[\#555\] {
     &::placeholder {
       color: #555;
