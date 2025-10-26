@@ -370,6 +370,9 @@
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
+  .gap-\[66px\] {
+    gap: 66px;
+  }
   .gap-x-\[54px\] {
     column-gap: 54px;
   }
@@ -525,12 +528,6 @@
   }
   .text-\[\#4285f4\] {
     color: #4285f4;
-  }
-  .text-\[2\] {
-    color: 2;
-  }
-  .text-\[24\] {
-    color: 24;
   }
   .text-black {
     color: var(--color-black);
