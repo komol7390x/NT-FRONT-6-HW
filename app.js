@@ -1,6 +1,6 @@
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
-if (users.length === 0) {
+if (users.length == 0) {
     users = [
         {
             id: 1,
@@ -27,6 +27,7 @@ if (users.length === 0) {
     localStorage.setItem("users", JSON.stringify(users));
 }
 
+// DOM elementlar
 const userName = document.getElementById("userName");
 const userEmail = document.getElementById("userEmail");
 const userPhone = document.getElementById("userPhone");
@@ -46,7 +47,7 @@ let editId = null;
 function renderUsers() {
     userList.innerHTML = "";
 
-    if (users.length === 0) {
+    if (users.length == 0) {
         userList.innerHTML = `<div class="empty-message">Hali user qo\'shilmagan 📭</div>`;
     } else {
         users.forEach((user) => {
@@ -54,7 +55,7 @@ function renderUsers() {
             div.classList.add("user-item");
             div.innerHTML = `
                 <div>
-                    <strong>${user.id}</strong><br>
+                <strong>ID: ${user.id}</strong><br>
                     <strong>${user.name}</strong> (${user.role})<br>
                     📧 ${user.email} <br>
                     ☎️ ${user.phone}
@@ -69,8 +70,8 @@ function renderUsers() {
     }
 
     totalUsers.textContent = users.length;
-    adminCount.textContent = users.filter(u => u.role === "Admin").length;
-    managerCount.textContent = users.filter(u => u.role === "Manager").length;
+    adminCount.textContent = users.filter(u => u.role == "Admin").length;
+    managerCount.textContent = users.filter(u => u.role == "Manager").length;
 
     localStorage.setItem("users", JSON.stringify(users));
 }
@@ -100,7 +101,8 @@ function addUser() {
 }
 
 function editUser(id) {
-    const user = users.find(u => u.id === id);
+    id = Number(id);
+    const user = users.find(u => u.id == id);
     if (!user) return;
 
     editId = id;
@@ -122,7 +124,7 @@ function updateUser() {
     const role = userRole.value;
 
     users = users.map(u =>
-        u.id === editId ? { ...u, name, email, phone, role } : u
+        u.id == editId ? { ...u, name, email, phone, role } : u
     );
 
     clearForm();
@@ -131,6 +133,7 @@ function updateUser() {
 }
 
 function deleteUser(id) {
+    id = Number(id);
     if (confirm("Haqiqatan o\'chirmoqchimisiz?")) {
         users = users.filter(u => u.id !== id);
         renderUsers();
@@ -147,7 +150,7 @@ function clearForm() {
 function cancelEdit() {
     editId = null;
     clearForm();
-    document.getElementById("formTitle").textContent = "Yangi User Qo\'sh";
+    document.getElementById("formTitle").textContent = "➕ Yangi User Qo\'sh";
     btnAdd.classList.remove("hidden");
     btnUpdate.classList.add("hidden");
     btnCancel.classList.add("hidden");
