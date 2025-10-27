@@ -1,7 +1,5 @@
-// Ma'lumotlar bazasi sifatida massiv (localStorage bilan birga ishlaydi)
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
-// Agar localStorage bo‘sh bo‘lsa — 3 ta boshlang‘ich user qo‘shamiz
 if (users.length === 0) {
     users = [
         {
@@ -46,12 +44,11 @@ const managerCount = document.getElementById("managerCount");
 
 let editId = null;
 
-// ✅ Ekranga chiqarish funksiyasi
 function renderUsers() {
     userList.innerHTML = "";
 
     if (users.length === 0) {
-        userList.innerHTML = `<div class="empty-message">Hali user qo‘shilmagan 📭</div>`;
+        userList.innerHTML = `<div class="empty-message">Hali user qo\'shilmagan 📭</div>`;
     } else {
         users.forEach((user) => {
             const div = document.createElement("div");
@@ -71,16 +68,13 @@ function renderUsers() {
         });
     }
 
-    // Statistika yangilanishi
     totalUsers.textContent = users.length;
     adminCount.textContent = users.filter(u => u.role === "Admin").length;
     managerCount.textContent = users.filter(u => u.role === "Manager").length;
 
-    // LocalStorage’ga saqlash
     localStorage.setItem("users", JSON.stringify(users));
 }
 
-// ✅ Qo‘shish funksiyasi
 function addUser() {
     const name = userName.value.trim();
     const email = userEmail.value.trim();
@@ -88,7 +82,7 @@ function addUser() {
     const role = userRole.value;
 
     if (!name || !email || !phone) {
-        alert("Barcha maydonlarni to‘ldiring!");
+        alert("Barcha maydonlarni to\'ldiring!");
         return;
     }
 
@@ -105,7 +99,6 @@ function addUser() {
     renderUsers();
 }
 
-// ✅ Tahrirlashni boshlash
 function editUser(id) {
     const user = users.find(u => u.id === id);
     if (!user) return;
@@ -116,13 +109,12 @@ function editUser(id) {
     userPhone.value = user.phone;
     userRole.value = user.role;
 
-    document.getElementById("formTitle").textContent = "✏️ Foydalanuvchini O‘zgartirish";
+    document.getElementById("formTitle").textContent = "✏️ Foydalanuvchini O\'zgartirish";
     btnAdd.classList.add("hidden");
     btnUpdate.classList.remove("hidden");
     btnCancel.classList.remove("hidden");
 }
 
-// ✅ Yangilash funksiyasi
 function updateUser() {
     const name = userName.value.trim();
     const email = userEmail.value.trim();
@@ -138,15 +130,13 @@ function updateUser() {
     cancelEdit();
 }
 
-// ✅ O‘chirish funksiyasi
 function deleteUser(id) {
-    if (confirm("Haqiqatan o‘chirmoqchimisiz?")) {
+    if (confirm("Haqiqatan o\'chirmoqchimisiz?")) {
         users = users.filter(u => u.id !== id);
         renderUsers();
     }
 }
 
-// ✅ Forma tozalash
 function clearForm() {
     userName.value = "";
     userEmail.value = "";
@@ -154,15 +144,13 @@ function clearForm() {
     userRole.value = "User";
 }
 
-// ✅ Tahrirlashni bekor qilish
 function cancelEdit() {
     editId = null;
     clearForm();
-    document.getElementById("formTitle").textContent = "➕ Yangi User Qo‘sh";
+    document.getElementById("formTitle").textContent = "➕ Yangi User Qo\'sh";
     btnAdd.classList.remove("hidden");
     btnUpdate.classList.add("hidden");
     btnCancel.classList.add("hidden");
 }
 
-// Boshlang‘ich yuklanish
 renderUsers();
