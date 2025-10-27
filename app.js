@@ -3,21 +3,21 @@ let users = JSON.parse(localStorage.getItem("users")) || [];
 if (users.length === 0) {
     users = [
         {
-            id: Date.now().toString() + "_1",
+            id: 1,
             name: "Komol",
             email: "komol@example.com",
             phone: "+998 90 111 22 33",
             role: "Admin"
         },
         {
-            id: Date.now().toString() + "_2",
+            id: 2,
             name: "Ali",
             email: "ali@gmail.com",
             phone: "+998 93 555 66 77",
             role: "User"
         },
         {
-            id: Date.now().toString() + "_3",
+            id: 3,
             name: "Malika",
             email: "malika@work.uz",
             phone: "+998 99 888 99 00",
@@ -27,7 +27,6 @@ if (users.length === 0) {
     localStorage.setItem("users", JSON.stringify(users));
 }
 
-// DOM elementlar
 const userName = document.getElementById("userName");
 const userEmail = document.getElementById("userEmail");
 const userPhone = document.getElementById("userPhone");
@@ -55,6 +54,7 @@ function renderUsers() {
             div.classList.add("user-item");
             div.innerHTML = `
                 <div>
+                    <strong>${user.id}</strong><br>
                     <strong>${user.name}</strong> (${user.role})<br>
                     📧 ${user.email} <br>
                     ☎️ ${user.phone}
@@ -85,9 +85,9 @@ function addUser() {
         alert("Barcha maydonlarni to\'ldiring!");
         return;
     }
-
+    const id = users.length == 0 ? 1 : users.at(-1).id + 1
     const newUser = {
-        id: Date.now().toString(),
+        id,
         name,
         email,
         phone,
@@ -147,7 +147,7 @@ function clearForm() {
 function cancelEdit() {
     editId = null;
     clearForm();
-    document.getElementById("formTitle").textContent = "➕ Yangi User Qo\'sh";
+    document.getElementById("formTitle").textContent = "Yangi User Qo\'sh";
     btnAdd.classList.remove("hidden");
     btnUpdate.classList.add("hidden");
     btnCancel.classList.add("hidden");
