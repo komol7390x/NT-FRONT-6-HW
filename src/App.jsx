@@ -1,12 +1,14 @@
+import { AudioCard, ProductCard } from './components/card'
+
 import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className="bg-main_background">
-        
+      <div className='flex flex-col gap-y-10'>
+        <ProductCard></ProductCard>
+        < br />
+        <AudioCard></AudioCard>
       </div>
     </>
   )
