@@ -19,7 +19,7 @@ export const Form = ({ setData }) => {
                     type="text"
                     value={input}
                     onChange={(emiter) => setInput(emiter.target.value)}
-                    className="p-2.5 cursor-pointer bg-green-300 rounded-2xl"
+                    className="p-2.5 cursor-pointer bg-green-300 rounded-2xl "
                 />
                 <button className="cursor-pointer p-2.5 bg-blue-300 rounded-2xl">send</button>
 
