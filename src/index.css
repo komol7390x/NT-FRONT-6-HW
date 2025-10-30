@@ -13,7 +13,8 @@
     --color-main_background: var(--main_background);
     --font_family-font_family: var(--font_family);
     --color-primary_color: var(--primary_color);
-    --color-gray_color: #E4E4E4
+    --color-gray_color: #E4E4E4;
+    --color-primary_soft: #eef4ff;
 }
 
 body {
