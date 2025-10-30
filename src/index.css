@@ -1,1 +1,24 @@
-@import 'tailwindcss'
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'tailwindcss';
+
+
+:root {
+    --main_background: #fff;
+    --font_family: "Open Sans", sans-serif;
+    --primary_color: #3f51b5;
+    --text_color: #242424
+}
+
+body {
+    background-color: var(--main_background);
+    font-family: var(--font_family);
+    color: var(--text_color);
+}
+
+.container {
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
