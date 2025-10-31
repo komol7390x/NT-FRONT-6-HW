@@ -1,5 +1,5 @@
 import { Banner } from './components/banner'
-import {infoData} from './data/infoData'
+import { infoData } from './data/infoData'
 
 export const Home = () => {
     return (
@@ -7,11 +7,12 @@ export const Home = () => {
             <Banner />
             <section>
                 <div className='container'>
-                    <h1>Komol</h1>
                     <div className=''>
                         {infoData.map((item) => (
-                            <li>
+                            <li className=''>
+                                <img src={item.img} alt={item.title} />
                                 <h1>{item.title}</h1>
+                                <p>{item.desc}</p>
                             </li>
                         ))}
                     </div>
