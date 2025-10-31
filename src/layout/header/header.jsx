@@ -15,7 +15,7 @@ export const Header = () => {
                     <Link to={'/'}>
                         <Logo />
                     </Link>
-                    <div className='flex gap-1'>
+                    <div className='flex gap-1 max-w-[740px]'>
                         <Category />
                         <SearchBar />
                     </div>
