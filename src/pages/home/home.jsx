@@ -1,5 +1,5 @@
 import { Banner } from './components/banner'
-import { Logo } from '../../assets/icons/logo'
+import {infoData} from './data/infoData'
 
 export const Home = () => {
     return (
@@ -7,10 +7,13 @@ export const Home = () => {
             <Banner />
             <section>
                 <div className='container'>
+                    <h1>Komol</h1>
                     <div className=''>
-                        <div className='flex gap-5'>
-                            {/* <div className="w-[212px] border-2"></div> */}
-                        </div>
+                        {infoData.map((item) => (
+                            <li>
+                                <h1>{item.title}</h1>
+                            </li>
+                        ))}
                     </div>
                 </div>
             </section>
