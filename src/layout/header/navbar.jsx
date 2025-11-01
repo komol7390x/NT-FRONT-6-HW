@@ -1,7 +1,7 @@
 export const Navbar = () => {
     return (
         <div>
-            <hr className="mt-2 text-[#E5E5E5]" />
+            <hr className="my-4 text-[#E5E5E5]" />
             <div className="container">
                 <ul className="flex py-3 gap-6">
                     <li>
