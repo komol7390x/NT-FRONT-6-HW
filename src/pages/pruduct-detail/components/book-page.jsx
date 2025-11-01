@@ -150,7 +150,7 @@ export const BookPage = ({
 
                         <div className="grid grid-cols-2 p-4 border rounded-b-2xl border-[#EEF4FF]">
                             <h3 className="font-bold">Рукн</h3>
-                            <p className="bg-primary_soft text-primary_color py-2 px-3 font-semibold rounded-2xl block">{genre}</p>
+                            <p className="bg-primary_soft text-primary_color py-2 px-4 font-semibold rounded-2xl block w-[200px]">{genre}</p>
                         </div>
 
                     </div>
