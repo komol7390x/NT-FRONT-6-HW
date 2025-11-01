@@ -9,10 +9,10 @@ export const BookPage = ({
 }) => {
     return (
         <div className="gap-6 flex">
-            <img src={img} alt={title} width={'330px'} height={'500px'} style={{ borderRadius: '14px' }} />
+            <img src={img} alt={title} width={'330px'} height={'420px'} style={{ borderRadius: '14px' }} />
 
             {/* info */}
-            <div className="">
+            <div className="flex flex-col justify-between ">
                 {/* title qatori */}
                 <div>
                     <div className="flex items-center justify-between">
