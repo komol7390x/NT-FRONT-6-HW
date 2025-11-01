@@ -21,6 +21,7 @@ body {
     background-color: var(--main_background);
     font-family: var(--font_family);
     color: var(--text_color);
+    box-sizing: border-box;
 }
 
 .container {

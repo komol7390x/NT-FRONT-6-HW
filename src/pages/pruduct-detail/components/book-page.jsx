@@ -4,11 +4,16 @@ import { Headphone } from "../../../assets/icons/headphone"
 import { SaveIcon } from "../../../assets/icons/save-icon"
 import { Stars5 } from "../../../assets/icons/stars-5"
 
+export const booksFilter = (items) => {
+    return items.filter((_, index) => index < 3)
+}
+
 export const BookPage = ({
-    img, title, genre, desc, star, comment, author, publisher, year, bookPrice, audioPrice, onlineBookPrice, ISBN, lang, pages, publisherYear
+    img, title, genre, desc, star, comment, author, publisher, year, bookPrice, audioPrice, onlineBookPrice
 }) => {
     return (
         <div>
+            {/* main */}
             <div className="gap-6 flex">
                 <img src={img} alt={title} width={'330px'} height={'420px'} style={{ borderRadius: '14px' }} />
 
@@ -17,6 +22,7 @@ export const BookPage = ({
 
                     {/* title qatori */}
                     <div>
+
                         <div className="flex items-center justify-between">
                             <h2 className="font-bold text-[30px] text-[#11142d]">{title}</h2>
                             <div className="flex gap-4 text-[#9A9A9A]">
@@ -34,6 +40,7 @@ export const BookPage = ({
                                 <p>{comment} Фикрлар </p>
                             </div>
                         </div>
+
                     </div>
 
                     {/* genre */}
@@ -46,6 +53,7 @@ export const BookPage = ({
 
                     {/* author */}
                     <div className="my-4 flex gap-[70px]">
+
                         <div>
                             <h3 className="font-normal text-[14px] text-[#aaa]" >Муаллиф</h3>
                             <p className="mt-2 font-semibold text-[#11142d]">{author}</p>
@@ -58,8 +66,9 @@ export const BookPage = ({
 
                         <div>
                             <h3 className="font-normal text-[14px] text-[#aaa]">Йил</h3>
-                            <p className="mt-2 font-semibold text-[#11142d]">{publisherYear}</p>
+                            <p className="mt-2 font-semibold text-[#11142d]">{year}</p>
                         </div>
+
                     </div>
 
                     {/* line */}
@@ -84,7 +93,7 @@ export const BookPage = ({
                         <a href="#">
                             <div className="bg-white inline-flex py-3 px-4 rounded-[14px] border border-primary_color">
                                 <Headphone />
-                                <p className="text-black pl-3">Аудио тинглаш - {bookPrice} сум</p>
+                                <p className="text-black pl-3">Аудио тинглаш - {audioPrice} сум</p>
                             </div>
                         </a>
 
@@ -92,7 +101,7 @@ export const BookPage = ({
                         <a href="#">
                             <div className="bg-white inline-flex py-3 px-4 rounded-[14px] border border-primary_color">
                                 <SaveIcon />
-                                <p className="text-black pl-3">Онлайн укиш - {bookPrice} сум</p>
+                                <p className="text-black pl-3">Онлайн укиш - {onlineBookPrice} сум</p>
                             </div>
                         </a>
 
@@ -101,65 +110,6 @@ export const BookPage = ({
 
                 </div>
             </div>
-
-            {/* info */}
-            <div className="flex mt-10 mb-80">
-                <div className="w-[880px]">
-
-                    <div className="flex gap-50 items-center">
-                        <h2 className="font-bold text-[32px]">Маълумотлар</h2>
-                        <h2 className="font-bold text-[#9a9a9a] text-[32px]">Фикрлар</h2>
-                    </div>
-
-                    <div className="">
-
-                        <div className="grid grid-cols-2 p-4 border rounded-t-2xl border-[#EEF4FF]">
-                            <h3 className="font-bold">Китоб номи</h3>
-                            <p>{title}</p>
-                        </div>
-
-                        <div className="grid grid-cols-2 p-4 border border-[#EEF4FF]">
-                            <h3 className="font-bold">Муаллиф</h3>
-                            <p>{author}</p>
-                        </div>
-
-                        <div className="grid grid-cols-2 p-4 border border-[#EEF4FF]">
-                            <h3 className="font-bold">ISBN</h3>
-                            <p>{ISBN}</p>
-                        </div>
-
-                        <div className="grid grid-cols-2 p-4 border border-[#EEF4FF]">
-                            <h3 className="font-bold">Тил</h3>
-                            <p>{lang}</p>
-                        </div>
-
-                        <div className="grid grid-cols-2 p-4 border border-[#EEF4FF]">
-                            <h3 className="font-bold">Сахифалар</h3>
-                            <p>{pages}</p>
-                        </div>
-
-                        <div className="grid grid-cols-2 p-4 border border-[#EEF4FF]">
-                            <h3 className="font-bold">Чоп этилган сана</h3>
-                            <p>{publisherYear}</p>
-                        </div>
-
-                        <div className="grid grid-cols-2 p-4 border border-[#EEF4FF]">
-                            <h3 className="font-bold">Нашриёт</h3>
-                            <p>{publisher}</p>
-                        </div>
-
-                        <div className="grid grid-cols-2 p-4 border rounded-b-2xl border-[#EEF4FF]">
-                            <h3 className="font-bold">Рукн</h3>
-                            <p className="bg-primary_soft text-primary_color py-2 px-4 font-semibold rounded-2xl block w-[200px]">{genre}</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
         </div>
-
-
-
     )
 }
