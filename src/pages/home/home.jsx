@@ -48,7 +48,7 @@ export const Home = () => {
                             <h3 className='font-semibold text-black text-[32px]'>Янги қўшилганлар</h3>
                             <LeftRightArrow />
                         </div>
-                        <div className='flex gap-6 mt-8'>
+                        <div className='flex justify-between gap-5 mt-8'>
                             {newAdd.map((item) => (
                                 <Link key={item.id} to={`/new-book/${item.id}`}>
                                     <BookCard title={item.title} img={item.img} ganre={item.ganre} star={item.star} />
