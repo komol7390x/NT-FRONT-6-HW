@@ -2,7 +2,7 @@ export const AboutBook = ({ ISBN, lang, pages, publisherYear, title, author, pub
     return (
         <div>
             {/* info */}
-            <div className="w-[880px]">
+            <div className="w-[840px]">
 
                 <div className="flex gap-50 items-center">
                     <h2 className="font-bold text-[32px]">Маълумотлар</h2>

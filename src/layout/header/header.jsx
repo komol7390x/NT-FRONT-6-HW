@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import { SearchBar } from './search-bar'
 import { Logo } from '../../assets/icons/logo'
 import { Category } from './category'
-import { Lang } from './lang'
-import { Signin } from './signin'
 import { Navbar } from './navbar'
+import { Lang } from '../../assets/icons/lang'
+import { Signin } from '../../assets/icons/signin'
 
 
 export const Header = () => {
