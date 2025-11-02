@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { MainLayout } from './layout/main-layout.jsx'
 import { Home } from './pages/home/home.jsx'
 import { AudioBookDetail } from './pages/pruduct-detail/audio-book-detail.jsx'
-import { NewBookDetail } from './pages/pruduct-detail/new-Book-detail.jsx'
+import { NewBookDetail } from './pages/pruduct-detail/new-book-detail.jsx'
 import { MostReadDetail } from './pages/pruduct-detail/most-read-book.jsx'
 
 function App() {
