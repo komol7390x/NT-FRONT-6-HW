@@ -6,7 +6,7 @@ import { AboutBook } from "./components/about-book"
 
 export const AudioBookDetail = () => {
     const { id } = useParams()
-    const book = audioBookData.find((item) => item.id == 1)
+    const book = audioBookData.find((item) => item.id == id)
     const books = audioBookData.filter((_, index) => index < 3)
 
     return (
