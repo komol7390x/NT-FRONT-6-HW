@@ -18,7 +18,7 @@ export const BookPage = ({
                 <img src={img} alt={title} width={'330px'} height={'420px'} style={{ borderRadius: '14px' }} />
 
                 {/* about */}
-                <div className="flex flex-col justify-between ">
+                <div className="flex flex-col gap-1.5 ">
 
                     {/* title qatori */}
                     <div>
