@@ -1,7 +1,9 @@
+import { useScrollTop } from "../../../hooks/top-scroll"
 import { MiniBanner } from "./mini-banner"
 import { MostRead } from "./most_read"
 
 export const Banner = () => {
+    useScrollTop()
     return (
         <section className="pt-4 pb-4">
             <div className="container">

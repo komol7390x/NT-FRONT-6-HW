@@ -3,11 +3,13 @@ import { audioBookData } from "../home/data/audioBook"
 import { BookPage } from "./components/book-page"
 import { LookLikeBook } from "./components/look-like-book"
 import { AboutBook } from "./components/about-book"
+import { useScrollTop } from "../../hooks/top-scroll"
 
 export const AudioBookDetail = () => {
     const { id } = useParams()
     const book = audioBookData.find((item) => item.id == id)
     const books = audioBookData.filter((_, index) => index < 3)
+    useScrollTop()
 
     return (
         <div className="container">

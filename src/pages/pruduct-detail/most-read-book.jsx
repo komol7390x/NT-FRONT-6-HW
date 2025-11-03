@@ -3,11 +3,13 @@ import { dataMost } from "../home/data/data"
 import { BookPage } from "./components/book-page"
 import { LookLikeBook } from "./components/look-like-book"
 import { AboutBook } from "./components/about-book"
+import { useScrollTop } from "../../hooks/top-scroll"
 
 export const MostReadDetail = () => {
     const { id } = useParams()
     const book = dataMost.find((item) => item.id == id)
     const books = dataMost.filter((_, index) => index < 3)
+    useScrollTop()
 
     return (
         <div className="container">

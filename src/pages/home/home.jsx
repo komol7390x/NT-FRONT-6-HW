@@ -8,8 +8,10 @@ import { ruknData } from './data/rukn'
 import { LeftRightArrow } from '../../assets/icons/left-right-arrow'
 import { audioBookData } from './data/audioBook'
 import { Link } from 'react-router-dom'
+import { useScrollTop } from '../../hooks/top-scroll'
 
 export const Home = () => {
+    useScrollTop()
     return (
         <>
             <Banner />
