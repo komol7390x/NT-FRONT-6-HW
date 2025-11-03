@@ -11,7 +11,7 @@ export const Follow = () => {
       </div>
 
       {/* down */}
-      <div className='flex border pt-8 pl-8 mt-6 shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] pb-30 gap-35'>
+      <div className='flex pt-8 pl-8 mt-6 shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] pb-30 gap-35'>
 
         {/* left */}
         <div>
@@ -46,7 +46,7 @@ export const Follow = () => {
         </div>
 
         {/* right */}
-        <div className='flex mt-27'>
+        <div className='mt-27'>
           <div className='w-[368px] bg-[#F5F5F5] flex flex-col justify-around h-[135px] rounded-[5px] '>
             <div className='flex items-center justify-between px-4'>
               <p>Бошланиш вакти</p>
@@ -65,7 +65,9 @@ export const Follow = () => {
 
           </div>
 
-
+          <div className='border mt-8 bg-[#3F51B5] rounded-2xl'>
+            <p className='text-white text-center py-2 '>Обуна булиш</p>
+          </div>
         </div>
 
       </div>
