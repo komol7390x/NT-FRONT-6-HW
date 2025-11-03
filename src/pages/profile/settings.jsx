@@ -18,7 +18,7 @@ export const Settings = () => {
           placeholder='Исмингиз'
           className='border border-[#EDEDED] py-3 w-full px-3 rounded-2xl'
         />
-        <div className='mt-[40px] w-full py-3 bg-primary_color rounded-2xl'>
+        <div className='mt-8 w-full py-3 bg-primary_color rounded-2xl'>
           <p className='text-center text-white'>Сақлаш</p>
         </div>
       </div>

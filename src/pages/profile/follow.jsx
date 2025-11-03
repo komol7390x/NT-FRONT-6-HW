@@ -2,7 +2,7 @@ import girl from '../../assets/girl_img.svg'
 
 export const Follow = () => {
   return (
-    <div className='grow border'>
+    <div className='grow'>
 
       {/* up girl */}
       <div className='bg-[#FF7F4D] h-[175px] rounded-xl relative w-[860px]'>
