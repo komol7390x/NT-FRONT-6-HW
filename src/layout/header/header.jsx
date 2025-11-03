@@ -22,7 +22,9 @@ export const Header = () => {
                 </div>
                 <div className='flex items-center gap-5'>
                     <Lang />
-                    <Signin />
+                    <Link to={'/profile'}>
+                        <Signin />
+                    </Link>
                 </div>
             </div>
             <Navbar />

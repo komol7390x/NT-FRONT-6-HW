@@ -4,6 +4,7 @@ import { Home } from './pages/home/home.jsx'
 import { AudioBookDetail } from './pages/pruduct-detail/audio-book-detail.jsx'
 import { NewBookDetail } from './pages/pruduct-detail/new-book-detail.jsx'
 import { MostReadDetail } from './pages/pruduct-detail/most-read-book.jsx'
+import { ProfileLayout } from './layout/profile-layout.jsx'
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
       <Routes>
         <Route path='/' element={<MainLayout />}>
           <Route index element={<Home />} />
+          <Route path='profile' element={<ProfileLayout />}>
+            <Route index element={''} />
+            <Route path='' element={''} />
+          </Route >
           <Route path='audio-book/:id' element={<AudioBookDetail />} />
           <Route path='new-book/:id' element={<NewBookDetail />} />
           <Route path='most-read/:id' element={<MostReadDetail />} />
