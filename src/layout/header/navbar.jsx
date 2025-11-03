@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export const Navbar = () => {
     return (
         <div>
@@ -5,19 +7,29 @@ export const Navbar = () => {
             <div className="container">
                 <ul className="flex py-3 gap-6">
                     <li>
-                        <a href="#" className="text-primary_color font-semibold text-[16px]">Аудиокитоб</a>
+                        <NavLink to={'audio-book'}>
+                            <p>Аудиокитоб</p>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="text-primary_color font-semibold text-[16px]">Электрон китоблар</a>
+                        <NavLink to={'online-book'}>
+                            <p>Электрон китоблар</p>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="text-primary_color font-semibold text-[16px]">Босма китоблар</a>
+                        <NavLink to={'printed-book'}>
+                            <p>Босма китоблар</p>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="text-primary_color font-semibold text-[16px]">Контакт</a>
+                        <NavLink to={'contact'}>
+                            <p>Контакт</p>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="text-primary_color font-semibold text-[16px]">Биз хақимизда</a>
+                        <NavLink to={'about-us'}>
+                            <p>Биз хақимизда</p>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

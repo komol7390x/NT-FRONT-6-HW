@@ -12,10 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path='profile' element={<ProfileLayout />}>
-            <Route index element={''} />
-            <Route path='' element={''} />
-          </Route >
+          <Route path='profile' element={<ProfileLayout />} />
           <Route path='audio-book/:id' element={<AudioBookDetail />} />
           <Route path='new-book/:id' element={<NewBookDetail />} />
           <Route path='most-read/:id' element={<MostReadDetail />} />
