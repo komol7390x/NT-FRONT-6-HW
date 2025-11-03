@@ -2,16 +2,16 @@ import girl from '../../assets/girl_img.svg'
 
 export const Follow = () => {
   return (
-    <div className='w-full grow'>
+    <div className='grow border'>
 
       {/* up girl */}
-      <div className='bg-[#FF7F4D] h-[175px] rounded-xl relative'>
+      <div className='bg-[#FF7F4D] h-[175px] rounded-xl relative w-[860px]'>
         <img src={girl} alt="girl" className='w-[186px] right-0 bottom-0 absolute scale-x-[-1]' />
         <h3 className='font-bold text-[24px] text-white w-[380px] p-8'>Узингиз севган булимга обуна бўлинг</h3>
       </div>
 
       {/* down */}
-      <div className='flex pt-8 pl-8 mt-6 shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] pb-30 gap-35'>
+      <div className='flex pt-8 pl-8 mt-6 shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] pb-30 gap-28'>
 
         {/* left */}
         <div>
@@ -47,26 +47,26 @@ export const Follow = () => {
 
         {/* right */}
         <div className='mt-27'>
-          <div className='w-[368px] bg-[#F5F5F5] flex flex-col justify-around h-[135px] rounded-[5px] '>
+          <div className='w-[358px] bg-[#F5F5F5] flex flex-col justify-around h-[135px] rounded-[5px] '>
             <div className='flex items-center justify-between px-4'>
-              <p>Бошланиш вакти</p>
-              <p>12/09/2021</p>
+              <p className='font-medium'>Бошланиш вакти</p>
+              <p className='font-bold'>12/09/2021</p>
             </div>
 
             <div className='flex items-center justify-between px-4'>
-              <p>Якунланиш вакти</p>
-              <p>12/10/2021</p>
+              <p className='font-medium' >Якунланиш вакти</p>
+              <p className='font-bold'>12/10/2021</p>
             </div>
 
             <div className='flex items-center justify-between px-4'>
-              <p>Обуна нархи</p>
-              <p className='text-[#3F51B5]'>12 000 сум</p>
+              <p className='font-medium'>Обуна нархи</p>
+              <p className='text-[#3F51B5] font-bold'>12 000 сум</p>
             </div>
 
           </div>
 
           <div className='border mt-8 bg-[#3F51B5] rounded-2xl'>
-            <p className='text-white text-center py-2 '>Обуна булиш</p>
+            <p className='text-white text-center py-2 font-medium '>Обуна булиш</p>
           </div>
         </div>
 

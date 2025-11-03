@@ -6,7 +6,7 @@ export const ProfileMenu = () => {
     return (
         <div>
             {/* lafet-layout */}
-            <div className="shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] p-9 flex flex-col gap-3">
+            <div className="shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] p-9 flex flex-col gap-3 w-[288px]">
 
                 <NavLink to={''}>
                     <div className="flex gap-2 text-[#3F51B5] items-center">
