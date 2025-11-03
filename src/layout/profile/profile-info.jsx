@@ -5,7 +5,7 @@ export const ProfileInfo = () => {
       <div>
           <div className="container">
               {/*profile-up */}
-              <div className="flex items-center gap-8 rounded-sm shadow-[0_4px_4px_0_rgba(0,0,0,0.06)]">
+              <div className="flex items-center gap-8 rounded-sm shadow-[0_4px_4px_0_rgba(0,0,0,0.06)]  -ml-5 w-[1190px]">
                   <img src={avatar} alt="avatar" className="p-6" />
                   <div>
                       <h2 className="font-bold text-[30px]">Суғдиёна Икромова</h2>

@@ -3,7 +3,7 @@ import avatar from '../../assets/png/avatar.png'
 
 export const Settings = () => {
   return (
-    <div className='w-[855px] rounded-sm shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] p-8'>
+    <div className='w-[865px] rounded-sm shadow-[0_4px_4px_0_rgba(0,0,0,0.06)] p-8'>
       <h3 className='font-bold text-[30px]'>Созламалар</h3>
       <div className='flex mt-12 items-center gap-[22px]'>
         <div className='flex items-center gap-4'>
