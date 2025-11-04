@@ -29,6 +29,11 @@ export const theme = createTheme({
             lineHeight: '130%',
             color: COLOR.textColor
         },
+        h1: {
+            fontWeight: 700,
+            fontSize: '60px',
+            color: '#F9F9F9'
+        }
     },
     components: {
         MuiTypography: {

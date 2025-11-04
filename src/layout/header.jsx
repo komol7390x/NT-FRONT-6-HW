@@ -11,7 +11,7 @@ import { SearchIcon } from "../assets/icon/searchIcon"
 export const Header = () => {
     return (
         <header>
-            <Container maxWidth='lg' style={{ border: '1px solid black' }}>
+            <Container maxWidth='lg'>
 
                 <Stack direction={'row'} gap={'60px'} py={'32px'} alignItems={'center'}>
 
@@ -61,7 +61,7 @@ export const Header = () => {
 
                 </Stack>
 
-                <Stack >
+                <Stack my={'30px'}>
                     <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'} color={'black'}>
                         <Link style={{ textDecoration: 'none' }} >
                             <Typography color="black"  >Ковры</Typography>
