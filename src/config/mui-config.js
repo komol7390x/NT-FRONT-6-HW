@@ -28,7 +28,15 @@ export const theme = createTheme({
             fontSize: '40px',
             lineHeight: '130%',
             color: COLOR.textColor
-        }
+        },
     },
-
+    components: {
+        MuiTypography: {
+            styleOverrides: {
+                root: {
+                    textDecoration: 'none',
+                },
+            },
+        },
+    }
 })
