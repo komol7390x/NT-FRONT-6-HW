@@ -6,7 +6,7 @@ import { ProfileMenu } from "./profile/profile-menu"
 export const ProfileLayout = () => {
     useScrollTop()
     return (
-        <div className="container border">
+        <div className="container">
             <ProfileInfo />
             <div className="flex mt-[60px] mb-25 gap-9" >
                 <ProfileMenu />
