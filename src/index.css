@@ -5,13 +5,15 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #002603;
+    color: black;
 }
 
 @theme {
     --color-primary-soft-grey: #666666;
-    --color-primary-hard-grey: #173b1a;
-    --color-primary-normal-gray: #002603
+    --color-primary-hard-grey: #333333;
+    --color-primary-normal-gray: #00B207;
+    --color-soft-grey: #E6E6E6;
+    --color-scale-white:#FFFFFF
 }
 
 .container {

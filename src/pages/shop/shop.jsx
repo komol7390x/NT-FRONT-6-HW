@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const News = () => {
+const Shop = () => {
   const navigate = useNavigate()
 
   function handleClick (id) {
