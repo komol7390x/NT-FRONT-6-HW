@@ -1,17 +1,14 @@
-import { Footer } from './header/footer'
-import { Header } from './header/header'
+import { Box } from '@mui/material'
 import { Outlet } from 'react-router-dom'
+import { Header } from './header'
 
 export const MainLayout = () => {
     return (
         <>
-            <div>
+            <Box>
                 <Header />
-                <main>
-                    <Outlet />
-                </main>
-                <Footer />
-            </div>
+                <Outlet />
+            </Box>
         </>
     )
 }
