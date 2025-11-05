@@ -28,20 +28,40 @@ export const Home = () => {
                 </Container>
             </Stack >
 
-            <Container style={{ border: '1px solid black' }}>
+            <Container>
                 <Stack>
                     <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'}>
-                        <Box display={'flex'} alignItems={'center'} gap={'32px'}>
+                        <Box display={'flex'} alignItems={'baseline'} gap={'32px'}>
                             <h3 style={{ fontSize: '40px' }}>Новинки</h3>
-                            <Link style={{ color: COLOR.primary }}>Все новинки</Link>
+                            <Link style={{ color: COLOR.primary, fontSize: '18px', fontWeight: 400 }}>Все новинки</Link>
                         </Box>
                         <Arrows />
                     </Box>
-                    <Box style={{ display: 'flex' }}>
+                    <Box style={{ display: 'flex' }} justifyContent={'space-between'} mb={'100px'}>
                         {CarpetData.map((item) => (
                             <div>
                                 <CarpetCard title={item.title} img={item.img} carpet_h={item.carpet_h}
-                                    carpet_w={item.carpet_w} state={item.state} comment={item.comment} price={item.price} />
+                                    carpet_w={item.carpet_w} state={item.state} comment={item.comment}
+                                    price={item.price} installment={item.installment} />
+                            </div>
+                        ))}
+                    </Box>
+                </Stack>
+
+                <Stack>
+                    <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'}>
+                        <Box display={'flex'} alignItems={'baseline'} gap={'32px'}>
+                            <h3 style={{ fontSize: '40px' }}>Скидки</h3>
+                            <Link style={{ color: COLOR.primary, fontSize: '18px', fontWeight: 400 }}>Все скидки</Link>
+                        </Box>
+                        <Arrows />
+                    </Box>
+                    <Box style={{ display: 'flex' }} justifyContent={'space-between'} mb={'100px'}>
+                        {CarpetData.map((item) => (
+                            <div>
+                                <CarpetCard title={item.title} img={item.img} carpet_h={item.carpet_h}
+                                    carpet_w={item.carpet_w} state={item.state} comment={item.comment}
+                                    price={item.price} installment={item.installment} sales='-20%' />
                             </div>
                         ))}
                     </Box>

@@ -1,4 +1,4 @@
-import img from '../assets/png/gilam-1.png'
+import img from '../assets/png/gilam-3.png'
 
 export const CarpetData = [
     {
