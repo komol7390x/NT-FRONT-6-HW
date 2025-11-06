@@ -8,7 +8,6 @@ function App() {
 
   return (
     <div className="container">
-      <div>Komol</div>
       <Form />
       {data?.userList?.map((item) => (
         <Card username={item.username} key={item.id} id={item.id} />
