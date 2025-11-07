@@ -30,7 +30,7 @@ export const PcNavbar = ({ items }) => {
                             </button>
 
                             <div
-                                className={`absolute left-0 mt-1 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden transform transition-all duration-200 ${activeMenu === label
+                                className={`absolute left-0 mt-1 w-48  bg-white rounded-md shadow-lg ring-1 ring-white ring-opacity-5 overflow-hidden transform transition-all duration-200 ${activeMenu === label
                                     ? "opacity-100 visible translate-y-0"
                                     : "opacity-0 invisible -translate-y-2"
                                     }`}
@@ -39,7 +39,7 @@ export const PcNavbar = ({ items }) => {
                                     <Link
                                         key={subLabel}
                                         to={subHref}
-                                        className="block px-4 py-2 hover:bg-primary-color hover:text-white transition-colors"
+                                        className="block px-4  py-2  hover:bg-primary-color hover:text-white transition-colors"
                                     >
                                         {subLabel}
                                     </Link>
@@ -49,7 +49,7 @@ export const PcNavbar = ({ items }) => {
                     ) : (
                         <Link
                             to={href}
-                            className="px-3 py-2 rounded-md text-foreground hover:bg-primary-color hover:text-white transition-colors duration-200"
+                            className="px-3 py-2 rounded-md text-foreground  hover:bg-primary-color hover:text-white transition-colors duration-200"
                         >
                             {label}
                         </Link>
