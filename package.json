@@ -1,5 +1,5 @@
 {
-  "name": "6-14",
+  "name": "nt-front-6-hw",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,12 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.16",
-    "nanoid": "^5.1.6",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-hook-form": "^7.66.0",
-    "tailwindcss": "^4.1.16"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
