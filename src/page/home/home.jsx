@@ -13,7 +13,8 @@ export const Home = () => {
         <div className='absolute -mt-[30px] px-1 w-full'>
           <Search />
         </div>
-          <CarList />
+        <CarList />
+        
       </div>
     </div>
   )

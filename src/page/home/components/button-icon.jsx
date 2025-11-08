@@ -4,7 +4,7 @@ export const ButtonIcon = ({ buttonData }) => {
     const [activeIndex, setActiveIndex] = React.useState(0)
 
     return (
-        <div className='w-full max-w-[476px] gap-1 flex justify-between items-center'>
+        <div className='w-full gap-1 flex tablet:gap-5 justify-center items-center'>
             {buttonData.map((title, index) => (
                 <button
                     key={index}
