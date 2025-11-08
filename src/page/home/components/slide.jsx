@@ -5,7 +5,7 @@ export const Slide = () => {
     return (
         <div>
             {/* slide-icon */}
-            <div className="absolute -mt-[60px] tablet:px-3 flex items-center justify-between w-full">
+            <div className="absolute -mt-[60px] tablet:px-4 flex items-center justify-between w-full">
                 <div className='mobile:mx-auto tablet:mx-0'>
                     <SlideIcon />
                 </div>

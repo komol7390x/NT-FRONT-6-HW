@@ -14,7 +14,6 @@ export const Home = () => {
           <Search />
         </div>
           <CarList />
-
       </div>
     </div>
   )
