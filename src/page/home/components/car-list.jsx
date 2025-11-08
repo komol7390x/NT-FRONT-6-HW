@@ -6,7 +6,7 @@ const buttonData = ['Compact', 'Sports cars', 'Vans']
 
 export const CarList = () => {
     return (
-        <div className='mt-[92px] border'>
+        <div className='mt-[92px]'>
             {/* Title */}
             <div className='text-center max-w-[585px] mx-auto px-5'>
                 <h3 className='text-[24px] font-semibold tablet:text-[36px]'>Choose the car of your dreams</h3>
