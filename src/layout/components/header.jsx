@@ -19,7 +19,7 @@ export const Header = () => {
         <img src={logo} alt="logo" />
 
         {/* Novbar */}
-        <div className='mobile:hidden pc:block'>
+        <div className='mobile:hidden pc:block z-10'>
           <PcNavbar items={manuData} />
         </div>
 
