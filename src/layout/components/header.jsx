@@ -11,10 +11,8 @@ export const Header = () => {
             <div className="flex justify-between items-center py-[50px] gap-100px">
 
                 {/* logo img */}
-                <div className="flex gap-2">
-                    <Logo />
-                    <h3 className="text-[38px] font-bold text-third-family text-primary-green-dark">Organick</h3>
-                </div>
+                <Logo />
+                    
 
                 {/* Navi */}
                 <ul className="text-[20px] text-primary-gray-dark font-bold flex gap-11">
@@ -64,7 +62,7 @@ export const Header = () => {
                 <div className="flex gap-4.5">
                     <div className="relative">
                         <div className="rounded-[36px]   border border-[#e0e0e0] bg-[#fafafa] py-5 pr-17 pl-6 w-[376px] grow">
-                            <input type="text" className="w-full outline-none" placeholder="Search"/>
+                            <input type="text" className="w-full outline-none" placeholder="Search" />
                         </div>
                         <div className="absolute top-1/2 right-0 -translate-y-1/2 cursor-pointer -translate-x-2 p-4 rounded-full border bg-primary-green-light">
                             <Search />

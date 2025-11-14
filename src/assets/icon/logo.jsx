@@ -1,6 +1,6 @@
 export const Logo = () => {
     return (
-        <div>
+        <div className="flex gap-2">
             <svg width={39} height={56} viewBox="0 0 39 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.85059 41.9263H19.2909H36.7312" stroke="#7EB693" strokeWidth={2} strokeMiterlimit={10} />
                 <path d="M5.79102 48.3579L19.291 48.3579L32.791 48.3579" stroke="#7EB693" strokeWidth={2} strokeMiterlimit={10} />
@@ -18,6 +18,7 @@ export const Logo = () => {
                 <path d="M1 22.3159L18.8657 41.0738" stroke="#7EB693" strokeWidth={2} strokeMiterlimit={10} />
                 <path d="M19.291 54.7158C9.19019 54.7158 1 46.2635 1 35.8351V19.8806C1 9.45419 9.19019 1 19.291 1C29.3937 1 37.5821 9.45419 37.5821 19.8806V35.8351C37.5839 46.2635 29.3937 54.7158 19.291 54.7158Z" stroke="#7EB693" strokeWidth={2} strokeMiterlimit={10} />
             </svg>
+            <h3 className="text-[38px] font-bold text-third-family text-primary-green-dark">Organick</h3>
         </div>
     )
 }
