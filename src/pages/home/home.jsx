@@ -3,6 +3,7 @@ import { BestFood } from './components/best-food'
 import { NaturalOffer } from './components/natural-offer'
 import { AboutUs } from './components/about-us'
 import { Category } from './components/category'
+import { Testimonial } from './components/testimonial'
 
 export const Home = () => {
   return (
@@ -14,6 +15,8 @@ export const Home = () => {
       <AboutUs />
 
       <Category />
+
+      <Testimonial />
     </div>
   )
 }

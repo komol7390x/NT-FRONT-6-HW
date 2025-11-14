@@ -1,6 +1,6 @@
 export const Button = ({ title = 'Read More', bg = 'white', icon = false, textColor = '274C5B' }) => {
     return (
-        <div style={{ background: bg }} className="p-2 rounded-2xl flex items-center gap-3 justify-center py-7 px-11">
+        <div style={{ background: bg }} className="p-2 cursor-pointer rounded-2xl flex items-center gap-3 justify-center py-7 px-11 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <p className={`text-${textColor} font-semibold text-5`}>{title}</p>
             {icon ? <span>
                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
