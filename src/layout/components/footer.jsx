@@ -16,7 +16,7 @@ export const Footer = () => {
                     <div className='flex gap-2'>
                         <div className='bg-white py-5 w-[350px] rounded-2xl px-3'>
                             <input type="text"
-                                className="outline-none border-0 focus:text-primary-green-dark focus:font-normal placeholder:italic text-primary-green-dark placeholder:text-gray-400 p-3 w-full"
+                                className="outline-none focus:text-primary-green-dark focus:font-normal placeholder:italic text-primary-green-dark placeholder:text-gray-400 p-3 w-full"
                                 placeholder='Your Email Address' />
                         </div>
                         <Button title='Subscribe' textColor='white' bg='#274C5B' />

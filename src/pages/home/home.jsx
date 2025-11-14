@@ -1,10 +1,19 @@
 import React from 'react'
-import { Banner } from './components/banner'
+import { BestFood } from './components/best-food'
+import { NaturalOffer } from './components/natural-offer'
+import { AboutUs } from './components/about-us'
+import { Category } from './components/category'
 
 export const Home = () => {
   return (
     <div className=''>
-      <Banner />
+      <BestFood />
+
+      <NaturalOffer />
+
+      <AboutUs />
+
+      <Category />
     </div>
   )
 }

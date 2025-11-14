@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap');
-
-body {}
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import "tailwindcss";
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -12,13 +12,12 @@ body {
   color: #525c60
 }
 
-@import "tailwindcss";
 
 :root {
   /* Fonts */
   --font-family: "Inter", sans-serif;
   --second-family: "Mulish", sans-serif;
-  --third-family: "Roboto", sans-serif;
+  --third-family: 'Yellowtail',sans-serif;
 
   /* Colors */
   --primary-green-light: #7EB693;
@@ -31,7 +30,7 @@ body {
 
 @theme inline {
   /* Fonts */
-  --font-font-family: var(--font-family);
+  --font-font-1: var(--font-family);
   --font-second-family: var(--second-family);
   --font-third-family: var(--third-family);
 
