@@ -11,8 +11,10 @@ export const Header = () => {
             <div className="flex justify-between items-center py-[50px] gap-100px">
 
                 {/* logo img */}
-                <Logo />
-                    
+                <Link to={'/'}>
+                    <Logo />
+                </Link>
+
 
                 {/* Navi */}
                 <ul className="text-[20px] text-primary-gray-dark font-bold flex gap-11">
