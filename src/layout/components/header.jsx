@@ -64,7 +64,7 @@ export const Header = () => {
                         <div className="rounded-[36px]   border border-[#e0e0e0] bg-[#fafafa] py-5 pr-17 pl-6 w-[376px] grow">
                             <input type="text" className="w-full outline-none" placeholder="Search" />
                         </div>
-                        <div className="absolute top-1/2 right-0 -translate-y-1/2 cursor-pointer -translate-x-2 p-4 rounded-full border bg-primary-green-light">
+                        <div className="absolute top-1/2 right-0 -translate-y-1/2 cursor-pointer -translate-x-2 p-4 rounded-full border border-primary-green-light bg-primary-green-light">
                             <Search />
                         </div>
                     </div>

@@ -10,7 +10,10 @@ import img9 from '../assets/img/data/bean.png'
 import img10 from '../assets/img/data/hazelnut2.png'
 import img11 from '../assets/img/data/corn.png'
 import img12 from '../assets/img/data/almonds.png'
-
+import img13 from '../assets/img/data/bean2.png'
+import img14 from '../assets/img/data/hazelnut3.png'
+import img15 from '../assets/img/data/onion.png'
+import img16 from '../assets/img/data/cabbage.png'
 
 
 export const productData = [
@@ -107,6 +110,38 @@ export const productData = [
         img: img12,
         name: 'Organic Almonds',
         type: 'Fresh',
+        price: 12
+    },
+
+    {
+        id: 13,
+        img: img13,
+        name: 'Mung Bean',
+        type: 'Vegetable',
+        price: 10
+    },
+
+    {
+        id: 14,
+        img: img14,
+        name: 'Brown Hazelnut',
+        type: 'Vegetable',
+        price: 12
+    },
+
+    {
+        id: 15,
+        img: img15,
+        name: 'Onion',
+        type: 'Vegetable',
+        price: 20
+    },
+
+    {
+        id: 16,
+        img: img16,
+        name: 'Cabbage',
+        type: 'Vegetable',
         price: 15
     },
 ]
