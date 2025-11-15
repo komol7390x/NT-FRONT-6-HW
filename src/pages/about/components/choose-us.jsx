@@ -73,7 +73,7 @@ export const ChooseUs = () => {
 
                 <div className='w-full flex justify-center  gap-8  mt-[90px]'>
                     {data.map((item) => (
-                        <div className='rounded-4xl bg-white  py-[50px] w-[257px] flex flex-col justify-center items-center text-center gap-6'>
+                        <div className='rounded-4xl bg-white transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer py-[50px] w-[257px] flex flex-col justify-center items-center text-center gap-6'>
                             <img src={item.img} alt={item.title} className='' />
                             <h4 className='text-[24px] font-font-1 font-semibold'>{item.title}</h4>
                             <p className='w-[184px]'>{item.desc}</p>

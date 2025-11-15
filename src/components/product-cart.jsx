@@ -1,9 +1,9 @@
 import { Stars } from "../assets/icon/stars"
 
-export const ProductCart = ({ name, img, type, price }) => {
+export const ProductCart = ({ name, img, type, price, bg = '#fff' }) => {
     return (
-        <div className="border hover:shadow-lg border-[#a0a0a052] inline-block bg-white pt-[78px] 
-        relative mt-8 rounded-[30px] transform transition-transform duration-300 hover:scale-105">
+        <div className={`border hover:shadow-lg border-[#a0a0a052] inline-block bg-[${bg}] pt-[78px] 
+        relative mt-8 rounded-[30px] transform transition-transform duration-300 hover:scale-105`}>
             <img src={img} alt={name} className="w-[360px] h-[360px]" />
             <div className="text-left flex flex-col gap-5">
                 <p className="px-8 text-[20px] font-semibold text-primary-green-dark">{name}</p>
