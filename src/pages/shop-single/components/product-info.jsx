@@ -6,7 +6,7 @@ export const ProductInfo = ({ data }) => {
     const [count, setCount] = React.useState(1)
 
     return (
-        <div className='container py-[130px] border'>
+        <div className='container py-[130px]'>
             <div className='flex gap-[88px] justify-center'>
 
                 <div className='border border-[#f1ebeb] rounded-4xl shadow-xl relative'>
