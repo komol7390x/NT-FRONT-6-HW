@@ -15,7 +15,7 @@ export const Shop = () => {
           {productData.slice(0, 12).map((item) => (
             <div className='bg-white]'>
               <Link to={`/product/${item.id}`}>
-                <ProductCart name={item.name} img={item.img} price={item.price} type={item.type} key={item.id} />
+                <ProductCart name={item.name} img={item.img} price={item.price} type={item.type} key={item.id} bg='#fff'/>
               </Link>
             </div>
           ))}
